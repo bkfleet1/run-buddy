@@ -46,6 +46,7 @@ header nav ul li a {
 
 /* Hero Style Start */
 .hero {
+  padding: 20px;
   background-image: url('../images/hero-bg.jpg');
   height: 600px;
   background-size: cover;
@@ -100,6 +101,7 @@ header nav ul li a {
 }
 /* Hero Style End */
 .intro {
+  padding: 20px;
   text-align: center;
 }
 
@@ -112,6 +114,7 @@ header nav ul li a {
 }
 
 .steps {
+  padding: 20px;
   text-align: center;
   background: #fce138;
 }
@@ -143,6 +146,7 @@ header nav ul li a {
 /* TRAINERS START */
 .trainers {
   text-align: center;
+  padding: 20px;
 }
 
 .trainer {
@@ -204,10 +208,42 @@ header nav ul li a {
 .secondary-border {
   border-color: #39a6b2;
 }
+/* REACH OUT SECTION START */
 
-section {
-  padding:60px
+.contact {
+ 
+  text-align: center;
+  background: #024e76;
 }
+
+.section-title {
+  font-size: 55px;
+  display: inline-block;
+  padding: 0 100px 20px 100px;
+  border-bottom: 3px solid;
+  margin-bottom: 35px;
+  color: #024e76;
+}
+
+.contact h2 {
+  color: #fce138;
+}
+
+.contact-info iframe {
+  width: 400px;
+  height: 400px;
+}
+
+.contact-info div {
+  width: 410px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 30px 0 0 60px;
+  color: white;
+}
+
+/* FOOTER START */
 
 footer {
   background: #fce138;
@@ -231,3 +267,4 @@ footer div {
 footer a {
   color: #024e76;
 }
+

@@ -163,6 +163,7 @@ section {
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .steps {
@@ -193,7 +194,7 @@ section {
 .steps span {
   font-size: 38px;
 }
-
+/*
 .section-title {
   font-size: 55px;
   color: #024e76;
@@ -201,8 +202,22 @@ section {
   padding: 0 100px 20px 100px;
   display: inline-block;
   border-bottom: 3px solid;
+} */
+
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  margin: 0 auto 35px auto;
+  padding-bottom: 20px;
+  display: inline-block;
+  width: 50%;
+  border-bottom: 3px solid;
+  text-align: center;
 }
 
+.flex-row {
+  display: flex;
+}
 .primary-border {
   border-color: #fce138;
 }

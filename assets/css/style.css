@@ -14,26 +14,25 @@ body {
 
 header {
   padding: 20px 35px;
+  background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: -webkit-sticky;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  background-color: #39a6b2;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   background-position: 80%;
 }
 
 header h1 {
+  font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  font-weight: bold;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin: 0;
 }
 
 header a {
@@ -105,14 +104,13 @@ section {
 /* HERO STYLES START */
 .hero {
   background-image: url('../images/hero-bg.jpg');
-  background-attachment: fixed;
-  background-position: 80%;
   background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 .hero-cta {
@@ -133,15 +131,18 @@ section {
 
 .hero-form {
   border: 3px solid #024e76;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-  background-color: rgba(255, 255, 56, 0.8);
+  background-color: rgba(255, 225, 56, 0.8);
   padding: 20px;
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
 
 .hero-form h3 {
   font-size: 24px;
@@ -153,13 +154,13 @@ section {
 
 .form-input {
   border: 1px solid #024e76;
-  border-radius: 10px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
   color: #024e76;
   width: 100%;
   margin-bottom: 15px; 
+  border-radius: 10px;
   background-color: rgba(255,255,255, 0.75);
 }
 
@@ -176,15 +177,10 @@ section {
   color: #fce138;
   background-color: #024e76;
   border: none;
-  border-radius: 10px;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
 } 
-
-.hero-form button:hover {
-  background-color: #39a6b2;  
-}
-
 /* HERO STYLES END */
 
 
@@ -235,7 +231,11 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  }
+}
+
+.step:last-child {
+  border-bottom: none;
+}
 
 .step h3 {
   color: #024e76;
@@ -273,11 +273,6 @@ section {
   line-height: 1.5;
   color: #024e76;
 }
-
-.step:last-child {
-  border-bottom: none;
-}
-
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
@@ -360,13 +355,8 @@ section {
   font-style: normal;
 }
 
-.contact-info a {
-  color: #fce138;
-}
-
 .contact-form input, .contact-form textarea {
   border: 1px solid #024e76;
-  border-radius: 10px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
@@ -374,6 +364,7 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
   background-color: rgba(255,255,255, 0.75);
 }
 
@@ -385,12 +376,12 @@ section {
 .contact-form button {
   width: 100%;
   border: none;
-  border-radius: 10px;
   background: #fce138;
   color: #024e76;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
 }
 
 .contact-form button:hover {
@@ -398,7 +389,9 @@ section {
   background: #39a6b2;
 }
 
-
+.contact-info a {
+  color: #fce138;
+}
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
@@ -415,8 +408,6 @@ section {
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-
-/*media query max screen width 980=> css parameters*/ /* Smaller screen media queries are below */
 @media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
@@ -465,16 +456,8 @@ section {
   }
 }
 
-.some-class {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
-}
-
-
-
-/*media query max screen width 768=> css parameters*/ /* Smaller screen media queries are below */
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-
   section {
     padding: 30px 15px;
   }
@@ -501,11 +484,13 @@ section {
     flex: 100%;  
   }
 
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
+  }
 }
 
-/*media query max screen width 575=> css parameters*/
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-
   .hero-form button {
     width: 100%;
   }
@@ -534,4 +519,3 @@ section {
     order: 3;
   }
 }
-
